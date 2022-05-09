@@ -1,5 +1,7 @@
 # GitHub Actions Linter
 
+[![version](https://img.shields.io/npm/v/@digitalservice4germany/github-actions-linter.svg)](https://www.npmjs.com/package/@digitalservice4germany/github-actions-linter)
+
 Linting for GitHub Actions workflows:
 
 - Detects referencing 3rd-party actions by mutable tags/references. The only actions allowed to be referenced in this way are actions created by GitHub itself.
