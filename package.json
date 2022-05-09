@@ -1,0 +1,34 @@
+{
+  "name": "@digitalservice4germany/hashed-actions",
+  "version": "0.0.1",
+  "description": "Check for presence of commit hashes in third party actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "contributors": [
+    {
+      "name": "Pram Gurusinga",
+      "email": "pratama.gurusinga@digitalservice.bund.de"
+    },
+    {
+      "name": "Klaus Hartl",
+      "email": "klaus.hartl@digitalservice.bund.de"
+    },
+    {
+      "name": "Christian Kaatz",
+      "email": "christian.kaatz@digitalservice.bund.de"
+    }
+  ],
+  "bin": {
+    "hashed-actions": "./cli.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "glob": "^8.0.1",
+    "yamljs": "^0.3.0",
+    "yargs": "^17.4.1"
+  }
+}
