@@ -1,5 +1,6 @@
 {
-  "name": "@digitalservice4germany/hashed-actions",
+  "name": "@digitalservice4germany/github-actions-linter",
+  "private": false,
   "version": "0.0.1",
   "description": "Check for presence of commit hashes in third party actions",
   "main": "index.js",
@@ -22,7 +23,7 @@
     }
   ],
   "bin": {
-    "hashed-actions": "./cli.js"
+    "github-actions-linter": "./cli.js"
   },
   "license": "MIT",
   "dependencies": {
