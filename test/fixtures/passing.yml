@@ -1,0 +1,12 @@
+name: Foo
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Passing step
+        uses: foo/action@a117e4aa1fb4854d021546d2abdfac95be568a3a

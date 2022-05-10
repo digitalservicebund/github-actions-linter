@@ -1,0 +1,12 @@
+name: Foo
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Invalid step
+        uses: foo/action@v1.0.0
