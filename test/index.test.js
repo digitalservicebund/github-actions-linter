@@ -1,3 +1,5 @@
+/* eslint-env jest */
+
 import linter from "../index"
 
 test("Inacceptable branch reference", () => {

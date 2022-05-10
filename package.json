@@ -6,6 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "lint:check": "eslint --ext .cjs,.js --ignore-path .gitignore .",
+    "lint:fix": "npm run lint:check -- --fix",
     "format:check": "prettier --check .",
     "format:fix": "prettier --write --ignore-unknown .",
     "release": "release-it"
@@ -36,6 +38,8 @@
     "yargs": "^17.4.1"
   },
   "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-plugin-import": "^2.26.0",
     "jest": "^28.1.0",
     "prettier": "^2.6.2",
     "release-it": "^15.0.0"

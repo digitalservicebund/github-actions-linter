@@ -1,8 +1,8 @@
 #! /usr/bin/env node
 
+import chalk from "chalk"
 import yargs from "yargs"
 import { hideBin } from "yargs/helpers"
-import chalk from "chalk"
 import linter from "./index.js"
 
 const argv = yargs(hideBin(process.argv)).argv

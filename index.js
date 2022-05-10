@@ -1,4 +1,3 @@
-import assert from "assert"
 import fs from "fs"
 import glob from "glob"
 import YAML from "yamljs"
@@ -8,11 +7,11 @@ export default (pattern) =>
     .sync(pattern)
     .map((path) => fs.readFileSync(path, "utf8"))
     .map((content) => YAML.parse(content))
-    .filter((content) => content.hasOwnProperty("jobs"))
+    .filter((content) => Object.prototype.hasOwnProperty.call(content, "jobs"))
     .map((yaml) => yaml.jobs)
     .flatMap((jobs) => Object.values(jobs))
     .flatMap((job) => job.steps)
-    .filter((step) => step.hasOwnProperty("uses"))
+    .filter((step) => Object.prototype.hasOwnProperty.call(step, "uses"))
     .map((step) => step.uses)
     .filter((uses) => !uses.startsWith("actions/"))
     .reduce((accumulator, uses) => {
