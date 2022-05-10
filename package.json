@@ -7,7 +7,8 @@
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "format:check": "prettier --check .",
-    "format:fix": "prettier --write --ignore-unknown ."
+    "format:fix": "prettier --write --ignore-unknown .",
+    "release": "release-it"
   },
   "type": "module",
   "contributors": [
