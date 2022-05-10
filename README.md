@@ -1,5 +1,6 @@
 # GitHub Actions Linter
 
+[![CI](https://github.com/digitalservice4germany/github-actions-linter/actions/workflows/ci.yml/badge.svg)](https://github.com/digitalservice4germany/github-actions-linter/actions/workflows/ci.yml)
 [![version](https://img.shields.io/npm/v/@digitalservice4germany/github-actions-linter.svg)](https://www.npmjs.com/package/@digitalservice4germany/github-actions-linter)
 
 Linting for GitHub Actions workflows:
