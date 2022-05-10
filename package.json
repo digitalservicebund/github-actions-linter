@@ -5,7 +5,9 @@
   "description": "Check for presence of commit hashes in third party actions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write --ignore-unknown ."
   },
   "type": "module",
   "contributors": [
