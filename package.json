@@ -2,7 +2,7 @@
   "name": "@digitalservice4germany/github-actions-linter",
   "private": false,
   "version": "0.0.2",
-  "description": "Check for presence of commit hashes in third party actions",
+  "description": "Linting for GitHub Actions workflows",
   "main": "index.js",
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
