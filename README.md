@@ -27,3 +27,19 @@ Lint workflow files in `.github/workflows`:
 ```bash
 npx --yes @digitalservice4germany/github-actions-linter@v0.0.2
 ```
+
+## Releasing
+
+👉 [release-it](https://www.npmjs.com/package/release-it)
+
+Start a dry run to see what would happen:
+
+```bash
+npm run release minor -- --dry-run
+```
+
+Do a real release (publishes to npm):
+
+```bash
+npm run release minor
+```
