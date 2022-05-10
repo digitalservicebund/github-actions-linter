@@ -6,7 +6,7 @@ import chalk from "chalk"
 import linter from "./index.js"
 
 const argv = yargs(hideBin(process.argv)).argv
-const workflowPath = argv.path || "./.github/workflows/"
+const workflowPath = argv.path || "./.github/workflows"
 
 try {
   console.log(chalk.blue(`Looking for workflows in ${argv.path}`))
