@@ -9,6 +9,5 @@ test("Inacceptable tag reference", () => {
 })
 
 test("Passing workflow", () => {
-  console.log(linter("./test/fixtures/passing.yml"))
-  // expect(linter("./test/fixtures/passing.yml").length).toBe(0)
+  expect(linter("./test/fixtures/passing.yml").length).toBe(0)
 })
