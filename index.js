@@ -1,7 +1,7 @@
-import assert from "assert";
-import fs from "fs";
-import glob from "glob";
-import YAML from "yamljs";
+import assert from "assert"
+import fs from "fs"
+import glob from "glob"
+import YAML from "yamljs"
 
 export default (root) =>
   glob
@@ -12,7 +12,7 @@ export default (root) =>
     .flatMap((yaml) => yaml.jobs)
     .map((jobs) => {
       for (let key of Object.keys(jobs)) {
-        return jobs[key];
+        return jobs[key]
       }
     })
     .flatMap((job) => job.steps)
@@ -24,7 +24,7 @@ export default (root) =>
         uses.split("@").length !== 2 ||
         uses.split("@")[1].search(/[a-z0-9]{40}$/) === -1
       ) {
-        return `${uses} should use a commit hash as a version identifier`;
+        return `${uses} should use a commit hash as a version identifier`
       }
     })
-    .filter((found) => found);
+    .filter((found) => found)
