@@ -6,11 +6,11 @@ import chalk from "chalk"
 import linter from "./index.js"
 
 const argv = yargs(hideBin(process.argv)).argv
-const workflowPath = argv.path || "./.github/workflows"
+const workflowsPattern = argv.path || "./.github/workflows/**/*.yml"
 
 try {
-  console.log(chalk.blue(`Looking for workflows in ${argv.path}`))
-  const result = linter(workflowPath)
+  console.log(chalk.blue(`Looking for workflows with pattern ${argv.path}`))
+  const result = linter(workflowsPattern)
   if (result.length > 0) {
     console.log(chalk.red("Found issues in workflow files"))
     console.log(chalk.red(result.join("\n")))

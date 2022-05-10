@@ -3,9 +3,9 @@ import fs from "fs"
 import glob from "glob"
 import YAML from "yamljs"
 
-export default (root) =>
+export default (pattern) =>
   glob
-    .sync(`${root}/**/*.yml`)
+    .sync(pattern)
     .map((path) => fs.readFileSync(path, "utf8"))
     .map((content) => YAML.parse(content))
     .filter((content) => content.hasOwnProperty("jobs"))
