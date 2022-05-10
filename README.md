@@ -18,3 +18,11 @@ Linting for GitHub Actions workflows:
 - name: Send status to Slack
   uses: lazy-actions/slatify@c4847b8c84e3e8076fd3c42cc00517a10426ed65 # == v3.0.0
 ```
+
+## Usage
+
+Lint workflow files in `.github/workflows`:
+
+```bash
+npx --yes @digitalservice4germany/github-actions-linter
+```
