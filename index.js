@@ -8,15 +8,11 @@ export default (root) =>
     .sync(`${root}/**/*.yml`)
     .map((path) => fs.readFileSync(path, "utf8"))
     .map((content) => YAML.parse(content))
-    .filter((content) => content && content.hasOwnProperty("jobs"))
-    .flatMap((yaml) => yaml.jobs)
-    .map((jobs) => {
-      for (let key of Object.keys(jobs)) {
-        return jobs[key]
-      }
-    })
+    .filter((content) => content.hasOwnProperty("jobs"))
+    .map((yaml) => yaml.jobs)
+    .flatMap((jobs) => Object.values(jobs))
     .flatMap((job) => job.steps)
-    .filter((step) => step && step.hasOwnProperty("uses"))
+    .filter((step) => step.hasOwnProperty("uses"))
     .map((step) => step.uses)
     .filter((uses) => !uses.startsWith("actions/"))
     .map((uses) => {
@@ -27,4 +23,3 @@ export default (root) =>
         return `${uses} should use a commit hash as a version identifier`
       }
     })
-    .filter((found) => found)
