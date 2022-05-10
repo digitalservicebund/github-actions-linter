@@ -25,5 +25,5 @@ Linting for GitHub Actions workflows:
 Lint workflow files in `.github/workflows`:
 
 ```bash
-npx --yes @digitalservice4germany/github-actions-linter
+npx --yes @digitalservice4germany/github-actions-linter@v0.0.2
 ```
