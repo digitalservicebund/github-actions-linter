@@ -1,3 +1,5 @@
 fileignoreconfig:
+  - filename: "*README.md"
+    ignore_detectors: [filecontent]
 scopeconfig:
   - scope: node
