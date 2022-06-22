@@ -1,5 +1,5 @@
 {
-  "name": "github-actions-linter",
+  "name": "@digitalservice/github-actions-linter",
   "private": false,
   "version": "0.1.2",
   "description": "Linting for GitHub Actions workflows",
