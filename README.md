@@ -1,7 +1,7 @@
-# GitHub Actions Linter
+# Github Actions Linter
 
 [![CI](https://github.com/digitalservicebund/github-actions-linter/actions/workflows/ci.yml/badge.svg)](https://github.com/digitalservicebund/github-actions-linter/actions/workflows/ci.yml)
-[![version](https://img.shields.io/npm/v/@digitalservicebund/github-actions-linter.svg)](https://www.npmjs.com/package/@digitalservicebund/github-actions-linter)
+[![version](https://img.shields.io/npm/v/gh-actions-linter.svg)](https://www.npmjs.com/package/gh-actions-linter)
 
 Linting for GitHub Actions workflows:
 
@@ -25,7 +25,7 @@ Linting for GitHub Actions workflows:
 Lint workflow files in `.github/workflows`:
 
 ```bash
-npx --yes @digitalservice4germany/github-actions-linter@v0.1.1
+npx --yes gh-actions-linter@v0.1.5
 ```
 
 ## Releasing
