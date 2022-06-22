@@ -1,7 +1,7 @@
 {
   "name": "@digitalservice/github-actions-linter",
   "private": false,
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Linting for GitHub Actions workflows",
   "main": "index.js",
   "scripts": {
