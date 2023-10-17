@@ -28,6 +28,26 @@ Lint workflow files in `.github/workflows`:
 npx --yes gh-actions-linter@v0.1.8
 ```
 
+## Also available as a Github Action
+
+```yml
+name: CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: validate github workflow files to have pinned versions
+        uses: digitalservicebund/github-actions/github-actions-linter@33695c875c198153e136ed0b99e06962e7fee0af
+```
+
 ## Releasing
 
 👉 [release-it](https://www.npmjs.com/package/release-it)
