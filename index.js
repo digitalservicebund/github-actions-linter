@@ -20,7 +20,7 @@ export default (pattern) =>
         uses.split("@")[1].search(/[a-z0-9]{40}$/) === -1
       ) {
         accumulator.push(
-          `${uses} should use a commit hash as a version identifier`
+          `${uses} should use a commit hash as a version identifier`,
         )
       }
       return accumulator
