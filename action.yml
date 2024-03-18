@@ -1,0 +1,19 @@
+name: Github Actions Lint
+description: "Lint your github actions workflow files for versioned 3rd party actions"
+
+inputs:
+  path:
+    required: false
+    description: "The path of the github workflow files, defaults to .github/workflows"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Setup Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: "18.18.2"
+    - name: Linting workflow file
+      shell: sh
+      run: |
+        npx --yes gh-actions-linter@v0.1.11

@@ -45,7 +45,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: validate github workflow files to have pinned versions
-        uses: digitalservicebund/github-actions/github-actions-linter@33695c875c198153e136ed0b99e06962e7fee0af
+        uses: digitalservicebund/github-actions-linter@LATEST_HASH
 ```
 
 ## Releasing
