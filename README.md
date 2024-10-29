@@ -52,14 +52,9 @@ jobs:
 
 👉 [release-it](https://www.npmjs.com/package/release-it)
 
-Start a dry run to see what would happen:
+At first login to npmjs and then run the interactive wizard:
 
 ```bash
-npm run release minor -- --dry-run
-```
-
-Do a real release (publishes to npm):
-
-```bash
-npm run release minor
+npm login
+npm run release
 ```
