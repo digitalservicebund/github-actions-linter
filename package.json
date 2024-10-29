@@ -4,6 +4,14 @@
   "version": "0.1.13",
   "description": "Linting for GitHub Actions workflows",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digitalservicebund/github-actions-linter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/digitalservicebund/github-actions-linter/issues"
+  },
+  "homepage": "https://github.com/digitalservicebund/github-actions-linter",
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "lint:check": "eslint --max-warnings 0 .",
@@ -16,15 +24,13 @@
   "contributors": [
     {
       "name": "Pram Gurusinga",
-      "email": "pratama.gurusinga@digitalservice.bund.de"
+      "email": "pratama.gurusinga@digitalservice.bund.de",
+      "url": "https://digitalservice.bund.de/"
     },
     {
-      "name": "Klaus Hartl",
-      "email": "klaus.hartl@digitalservice.bund.de"
-    },
-    {
-      "name": "Christian Kaatz",
-      "email": "christian.kaatz@digitalservice.bund.de"
+      "name": "Sebastian Bitterhof",
+      "email": "sebastian.bitterhof@digitalservice.bund.de",
+      "url": "https://digitalservice.bund.de/"
     }
   ],
   "bin": {
