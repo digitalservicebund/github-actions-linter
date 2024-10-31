@@ -28,6 +28,12 @@ Lint workflow files in `.github/workflows`:
 npx --yes gh-actions-linter@v0.1.14
 ```
 
+## Run locally
+
+```bash
+npx .
+```
+
 ## Also available as a Github Action
 
 ```yml
