@@ -12,8 +12,8 @@ runs:
     - name: Setup Node
       uses: actions/setup-node@v4
       with:
-        node-version: "20.16.0"
+        node-version: "20.18.0"
     - name: Linting workflow file
       shell: sh
       run: |
-        npx --yes gh-actions-linter@v0.1.11
+        npx --yes gh-actions-linter@v0.1.14
