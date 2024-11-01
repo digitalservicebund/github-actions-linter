@@ -56,11 +56,16 @@ jobs:
 
 ## Releasing
 
-👉 [release-it](https://www.npmjs.com/package/release-it)
+We use 👉 [release-it](https://www.npmjs.com/package/release-it)
 
-At first login to npmjs and then run the interactive wizard:
+Checklist:
 
-```bash
-npm login
-npm run release
-```
+- At first login to npmjs.com and make sure you have write access to the package
+- Run `npm login` and follow the wizard
+- Adapt the future semantic version in this README.md in section Usage
+- Align the node version in `.node-version` with `action.yml` (It's recommended to use nodenv)
+- Align the future semantic version in the `action.yml`
+- Change whatever you like
+- Make sure tests are green, linting is fine and format is checked: `npm run test && npm run lint:check && npm run format:check`
+- Commit and Push your changes
+- Finally run the interactive wizard `npm run release` which will automatically increase the semantic versioning in the `package.json`
