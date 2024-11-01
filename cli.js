@@ -9,7 +9,9 @@ const argv = yargs(hideBin(process.argv)).argv
 const workflowsPattern = argv.path || "./.github/workflows/**/*.yml"
 
 try {
-  console.log(chalk.blue(`Looking for workflows with pattern ${workflowsPattern}`))
+  console.log(
+    chalk.blue(`Looking for workflows with pattern ${workflowsPattern}`),
+  )
   const result = linter(workflowsPattern)
   if (result.length > 0) {
     console.log(chalk.red("Found issues in workflow files"))
