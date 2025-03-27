@@ -16,4 +16,4 @@ runs:
     - name: Linting workflow file
       shell: sh
       run: |
-        npx --yes gh-actions-linter@v0.1.14
+        npx --yes gh-actions-linter@v0.1.15
