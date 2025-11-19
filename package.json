@@ -39,7 +39,7 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^5.4.1",
-    "glob": "^11.0.1",
+    "glob": "^13.0.0",
     "yamljs": "^0.3.0",
     "yargs": "^17.7.2"
   },
